@@ -60,7 +60,7 @@ const Navbar = () => {
           <div>
             <div className="flex w-full items-center justify-between">
               <h2 className="w-[87px] h-[35px] rounded-lg shadow-md shadow-[#5651e57a] text-center text-[#5651e5] text-opacity-75">
-                MB
+                Mike Bartels
               </h2>
               <div
                 onClick={handleNav}
