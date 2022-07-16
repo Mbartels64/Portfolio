@@ -1,5 +1,13 @@
 import Image from "next/image";
 import React from "react";
+import htmlLogo from "../public/assets/skills/html.png";
+import cssLogo from "../public/assets/skills/css.png";
+import jsLogo from "../public/assets/skills/javascript.png";
+import reactLogo from "../public/assets/skills/react.png";
+import nextLogo from "../public/assets/skills/nextjs.png";
+import nodejsLogo from "../public/assets/skills/node.png";
+import mongodbLogo from "../public/assets/skills/mongo.png";
+import firebaseLogo from "../public/assets/skills/firebase.png";
 
 const Skills = () => {
   return (
@@ -13,12 +21,7 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/html.png"
-                  alt=""
-                  width="64px"
-                  height="64px"
-                />
+                <Image src={htmlLogo} alt="" width="64px" height="64px" />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>HTML</h3>
@@ -28,12 +31,7 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/css.png"
-                  alt=""
-                  width="64px"
-                  height="64px"
-                />
+                <Image src={cssLogo} alt="" width="64px" height="64px" />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>CSS</h3>
@@ -43,12 +41,7 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/javascript.png"
-                  alt=""
-                  width="64px"
-                  height="64px"
-                />
+                <Image src={jsLogo} alt="" width="64px" height="64px" />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>JavaScript</h3>
@@ -58,12 +51,7 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/react.png"
-                  alt=""
-                  width="64px"
-                  height="64px"
-                />
+                <Image src={reactLogo} alt="" width="64px" height="64px" />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>ReactJS</h3>
@@ -73,12 +61,7 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/nextjs.png"
-                  alt=""
-                  width="64px"
-                  height="64px"
-                />
+                <Image src={nextLogo} alt="" width="64px" height="64px" />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>NextJS</h3>
@@ -88,12 +71,7 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/node.png"
-                  alt=""
-                  width="64px"
-                  height="64px"
-                />
+                <Image src={nodejsLogo} alt="" width="64px" height="64px" />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>NodeJS</h3>
@@ -103,12 +81,7 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/mongo.png"
-                  alt=""
-                  width="64px"
-                  height="64px"
-                />
+                <Image src={mongodbLogo} alt="" width="64px" height="64px" />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>MongoDB</h3>
@@ -118,12 +91,7 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/firebase.png"
-                  alt=""
-                  width="64px"
-                  height="64px"
-                />
+                <Image src={firebaseLogo} alt="" width="64px" height="64px" />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Firebase</h3>
