@@ -24,7 +24,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <h2 className="py-2">Name Here</h2>
+                <h2 className="py-2">Mike Bartels</h2>
                 <p>Full-Stack Developer</p>
                 <p className="py-4">
                   I am available for freelance or full-time positions. Contact
