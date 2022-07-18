@@ -29,7 +29,7 @@ const Main = () => {
             I&#39;m a student who is following a Associates degree software
             engineering at Zuyd Hogeschool based in Heerlen, Limburg.
             <span className="underline mx-1">
-              <a href="/resume">see resume.</a>
+              <Link href="/resume">see resume.</Link>
             </span>
             currently im working on projects to boost my portfolio and gain more
             knowledge and learn different languages
