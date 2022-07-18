@@ -7,18 +7,36 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
+  const [query, setQuery] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
 
-  const handleSubmit = () => {
-    setName("");
-    setPhone("");
-    setEmail("");
-    setSubject("");
-    setMessage("");
+  // Update inputs value
+  const handleParam = () => (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    setQuery((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+  // Form Submit function
+  const formSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData();
+    Object.entries(query).forEach(([key, value]) => {
+      formData.append(key, value);
+    });
+    fetch("https://getform.io/f/75e8b92f-9814-4159-8681-c776fe4a4645", {
+      method: "POST",
+      body: formData,
+    }).then(() =>
+      setQuery({ name: "", phone: "", email: "", subject: "", message: "" })
+    );
   };
   return (
     <div id="contact" className="w-full lg:h-screen">
@@ -68,11 +86,7 @@ const Contact = () => {
           {/* Rechter */}
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
-              <form
-                onSubmit={handleSubmit}
-                action="https://getform.io/f/75e8b92f-9814-4159-8681-c776fe4a4645"
-                method="POST"
-              >
+              <form onSubmit={formSubmit}>
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
                     <label className="uppercase text-sm py-2">Name</label>
@@ -80,8 +94,8 @@ const Contact = () => {
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                       type="text"
                       name="name"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
+                      value={query.name}
+                      onChange={handleParam()}
                     />
                   </div>
                   <div className="flex flex-col">
@@ -92,8 +106,8 @@ const Contact = () => {
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                       type="text"
                       name="phone"
-                      value={phone}
-                      onChange={(e) => setPhone(e.target.value)}
+                      value={query.phone}
+                      onChange={handleParam()}
                     />
                   </div>
                 </div>
@@ -103,8 +117,8 @@ const Contact = () => {
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     type="email"
                     name="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    value={query.email}
+                    onChange={handleParam()}
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -113,8 +127,8 @@ const Contact = () => {
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     type="text"
                     name="subject"
-                    value={subject}
-                    onChange={(e) => setSubject(e.target.value)}
+                    value={query.subject}
+                    onChange={handleParam()}
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -123,8 +137,8 @@ const Contact = () => {
                     className="border-2 rounded-lg p-3 border-gray-300"
                     rows="10"
                     name="message"
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
+                    value={query.message}
+                    onChange={handleParam()}
                   ></textarea>
                 </div>
                 <button className="w-full p-4 text-gray-100 mt-4">
