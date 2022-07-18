@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const About = () => {
@@ -22,9 +23,11 @@ const About = () => {
             eaque, ratione omnis ea ad repellendus sapiente blanditiis laborum
             rerum tempore ab placeat animi. Voluptatem, deleniti perferendis?
           </p>
-          <p className="py-2 text-gray-600 underline cursor-pointer">
-            Check out my latest projects.
-          </p>
+          <Link href="/#projects">
+            <p className="py-2 text-gray-600 underline cursor-pointer">
+              Check out my latest projects.
+            </p>
+          </Link>
         </div>
         <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           <img
