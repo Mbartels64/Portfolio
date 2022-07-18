@@ -14,7 +14,10 @@ export default function Home() {
     <div>
       <Head>
         <title>Mike Bartels | Full Stack Developer </title>
-        <meta name="description" content="created by Mike Bartels" />
+        <meta
+          name="description"
+          content="A portfolio of Mike Bartels || Software Engineer"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Main />
