@@ -18,8 +18,8 @@ const Main = () => {
               Hi, I&#39;m
               <span>
                 <Typed
-                  className="md:text-5xl sm:text-4xl text-xl font-bold md:pl-4 pl-2 text-[#5651e5]"
-                  strings={["Mike", "Bartels"]}
+                  className="text-[#5651e5]"
+                  strings={[" Mike", " Bartels"]}
                   typeSpeed={120}
                   backSpeed={140}
                   loop
