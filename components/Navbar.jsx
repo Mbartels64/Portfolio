@@ -62,21 +62,25 @@ const Navbar = () => {
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
-            <Link href="#about">
+            <Link href="/#about">
               <li className="ml-10 text-sm uppercase hover:border-b">About</li>
             </Link>
-            <Link href="#skills">
+            <Link href="/#skills">
               <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
             </Link>
-            <Link href="#projects">
+
+            <Link href="/#projects">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Projects
               </li>
             </Link>
-            <Link href="#contact">
+            <Link href="/#contact">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Contacts
               </li>
+            </Link>
+            <Link href="/resume">
+              <li className="ml-10 text-sm uppercase hover:border-b">Resume</li>
             </Link>
           </ul>
           <div onClick={handleNav} className="md:hidden cursor-pointer">
@@ -122,22 +126,22 @@ const Navbar = () => {
                   Home
                 </li>
               </Link>
-              <Link href="#about">
+              <Link href="/#about">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   About
                 </li>
               </Link>
-              <Link href="#skills">
+              <Link href="/#skills">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Skills
                 </li>
               </Link>
-              <Link href="#projects">
+              <Link href="/#projects">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Projects
                 </li>
               </Link>
-              <Link href="#contact">
+              <Link href="/#contact">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Contacts
                 </li>
