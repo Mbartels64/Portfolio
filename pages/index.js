@@ -17,7 +17,6 @@ export default function Home() {
         <meta name="description" content="created by Mike Bartels" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
       <Main />
       <About />
       <Skills />

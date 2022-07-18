@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import propertyImg from "../public/assets/projects/property.jpeg";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
+import twitchImg from "../public/assets/projects/twitch.jpeg";
 
-const property = () => {
+const twitch = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
@@ -13,11 +13,11 @@ const property = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={propertyImg}
+          src={twitchImg}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Property Finder</h2>
+          <h2 className="py-2">Twitch clone</h2>
           <h3>React.JS / Tailwind.CSS / Firebase</h3>
         </div>
       </div>
@@ -28,14 +28,18 @@ const property = () => {
           </p>
           <h2 className="py-4">Overview</h2>
           <p className="py-2 text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-            distinctio eum recusandae cum nisi totam officia excepturi, ducimus
-            sit maiores accusamus similique atque. Nisi, mollitia voluptatum
-            similique voluptates ipsum velit?Lorem ipsum dolor, sit amet
-            consectetur adipisicing elit. Sed voluptates officiis amet totam
-            consequuntur. Modi nam asperiores rerum quaerat alias, excepturi
-            delectus vel minima iusto! Voluptatum corrupti reprehenderit vero
-            soluta.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate
+            accusamus deleniti perspiciatis facilis sit laboriosam rem similique
+            veritatis sint enim voluptate porro, illum recusandae voluptatum
+            pariatur sed quaerat animi fuga, ducimus incidunt vero, iste eaque?
+            Corporis molestias incidunt, in illum possimus, provident mollitia
+            at rem quaerat voluptatem, voluptatibus repellat quod sunt.
+            Consectetur quidem impedit quae facilis quisquam provident quis,
+            facere odio eos eligendi officiis, beatae pariatur error illo totam,
+            veritatis accusamus architecto saepe maiores cum praesentium dolorem
+            accusantium? Sunt, deleniti. Explicabo est harum aut doloribus
+            ducimus dolores qui quis accusamus, architecto quidem iusto porro ad
+            temporibus vel eligendi? Amet, iure?
           </p>
           <button className="px-8 py-2 mt-4 mr-8">Demo</button>
           <button className="px-8 py-2 mt-4">Code</button>
@@ -73,4 +77,4 @@ const property = () => {
   );
 };
 
-export default property;
+export default twitch;

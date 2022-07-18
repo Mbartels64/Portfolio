@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import propertyImg from "../public/assets/projects/property.jpeg";
+import netflixImg from "../public/assets/projects/netflix.jpeg";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
-const property = () => {
+const netflix = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
@@ -13,11 +13,11 @@ const property = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={propertyImg}
+          src={netflixImg}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Property Finder</h2>
+          <h2 className="py-2">Netflix clone</h2>
           <h3>React.JS / Tailwind.CSS / Firebase</h3>
         </div>
       </div>
@@ -28,14 +28,20 @@ const property = () => {
           </p>
           <h2 className="py-4">Overview</h2>
           <p className="py-2 text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-            distinctio eum recusandae cum nisi totam officia excepturi, ducimus
-            sit maiores accusamus similique atque. Nisi, mollitia voluptatum
-            similique voluptates ipsum velit?Lorem ipsum dolor, sit amet
-            consectetur adipisicing elit. Sed voluptates officiis amet totam
-            consequuntur. Modi nam asperiores rerum quaerat alias, excepturi
-            delectus vel minima iusto! Voluptatum corrupti reprehenderit vero
-            soluta.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+            neque. Porro consequuntur harum consequatur doloribus consectetur
+            reprehenderit commodi aliquid dignissimos?Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Consequuntur natus facilis laudantium
+            alias nihil, libero nisi voluptatum? Autem quaerat maiores quasi,
+            tempora dolores nisi illum tenetur iste, iure deleniti recusandae
+            ipsum. Temporibus beatae non provident eos consequatur officiis
+            quasi rem ea, quas maiores ex architecto dolores! Aut magnam quod
+            quidem cupiditate labore ex, nam id esse repellendus rem eum,
+            dolorem dolor provident adipisci eius cum? Fugit, eveniet. Provident
+            nulla aspernatur fugiat porro rem voluptatum ut vero, quos tenetur
+            fugit veritatis error assumenda nam, quibusdam odio animi quasi
+            consectetur enim doloribus esse laborum! Harum sint explicabo
+            excepturi facilis. Quibusdam, ea necessitatibus.
           </p>
           <button className="px-8 py-2 mt-4 mr-8">Demo</button>
           <button className="px-8 py-2 mt-4">Code</button>
@@ -73,4 +79,4 @@ const property = () => {
   );
 };
 
-export default property;
+export default netflix;
