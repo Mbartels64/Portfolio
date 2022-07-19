@@ -31,7 +31,7 @@ const Main = () => {
             <span className="underline mx-1">
               <Link href="/resume">see resume.</Link>
             </span>
-            currently im working on projects to boost my portfolio and gain more
+            Currently im working on projects to boost my portfolio and gain more
             knowledge and learn different languages
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
