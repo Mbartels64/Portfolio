@@ -44,7 +44,7 @@ const Education = () => {
                 <p>Cursus</p>
               </div>
               <div className="flex flex-row items-center justify-center">
-                <p>feb.2022 - Heden</p>
+                <p>feb.2022 - present</p>
               </div>
               <div className="flex flex-row items-center justify-center">
                 <p>Heerlen, Limburg, Nederland</p>
