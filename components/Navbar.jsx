@@ -146,6 +146,11 @@ const Navbar = () => {
                   Contacts
                 </li>
               </Link>
+              <Link href="/resume">
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Resume
+                </li>
+              </Link>
             </ul>
             <div className="pt-40">
               <p className="uppercase tracking-widest text-[#5651e5]">
