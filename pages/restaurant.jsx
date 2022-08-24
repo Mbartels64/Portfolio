@@ -40,10 +40,18 @@ const property = () => {
             Paypal &#x28;this is at the moment for development only in sandbox
             mode&#x29;. The front end is made with CSS and Tailwind.CSS.
           </p>
-          <a href="https://restaurant-show.vercel.app/" target={"_blank"}>
+          <a
+            href="https://restaurant-show.vercel.app/"
+            target={"_blank"}
+            rel="noreferrer"
+          >
             <button className="px-8 py-2 mt-4 mr-8">Demo</button>
           </a>
-          <a href="https://github.com/Mbartels64/restaurant" target={"_blank"}>
+          <a
+            href="https://github.com/Mbartels64/restaurant"
+            target={"_blank"}
+            rel="noreferrer"
+          >
             <button className="px-8 py-2 mt-4">Code</button>
           </a>
         </div>
