@@ -3,6 +3,8 @@ import propertyImg from "../public/assets/projects/property.jpeg";
 import cryptoImg from "../public/assets/projects/crypto.jpeg";
 import netflixImg from "../public/assets/projects/netflix.jpeg";
 import twitchImg from "../public/assets/projects/twitch.jpeg";
+import restaurantImg from "../public/assets/projects/restaurant.jpeg";
+
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
@@ -15,9 +17,9 @@ const Projects = () => {
         <h2 className="py-4">What I&#39;ve Built</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
-            title="Property Finder"
-            backgroundImg={propertyImg}
-            projectUrl="/property"
+            title="Restaurant site"
+            backgroundImg={restaurantImg}
+            projectUrl="/restaurant"
             tech="Next.js"
           />
           <ProjectItem
