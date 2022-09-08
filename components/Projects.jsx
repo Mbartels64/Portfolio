@@ -1,11 +1,10 @@
-import React from "react";
-import propertyImg from "../public/assets/projects/property.jpeg";
-import cryptoImg from "../public/assets/projects/crypto.jpeg";
-import netflixImg from "../public/assets/projects/netflix.jpeg";
-import twitchImg from "../public/assets/projects/twitch.jpeg";
-import restaurantImg from "../public/assets/projects/restaurant.jpeg";
+import React from 'react';
+import netflixImg from '../public/assets/projects/netflix.jpeg';
+import twitchImg from '../public/assets/projects/twitch.jpeg';
+import restaurantImg from '../public/assets/projects/restaurant.jpeg';
+import p4uwbedrijfImg from '../public/assets/projects/p4uwbedrijf.jpeg';
 
-import ProjectItem from "./ProjectItem";
+import ProjectItem from './ProjectItem';
 
 const Projects = () => {
   return (
@@ -23,21 +22,9 @@ const Projects = () => {
             tech="Next.js"
           />
           <ProjectItem
-            title="Crypto App"
-            backgroundImg={cryptoImg}
-            projectUrl="/crypto"
-            tech="React.js"
-          />
-          <ProjectItem
-            title="Netflix Clone"
-            backgroundImg={netflixImg}
-            projectUrl="/netflix"
-            tech="React.js"
-          />
-          <ProjectItem
-            title="Twitch Clone"
-            backgroundImg={twitchImg}
-            projectUrl="/twitch"
+            title="P4uwbedrijf"
+            backgroundImg={p4uwbedrijfImg}
+            projectUrl="/p4uwbedrijf"
             tech="Next.js"
           />
         </div>

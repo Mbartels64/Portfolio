@@ -1,13 +1,18 @@
-import Image from "next/image";
-import React from "react";
-import htmlLogo from "../public/assets/skills/html.png";
-import cssLogo from "../public/assets/skills/css.png";
-import jsLogo from "../public/assets/skills/javascript.png";
-import reactLogo from "../public/assets/skills/react.png";
-import nextLogo from "../public/assets/skills/nextjs.png";
-import nodejsLogo from "../public/assets/skills/node.png";
-import mongodbLogo from "../public/assets/skills/mongo.png";
-import firebaseLogo from "../public/assets/skills/firebase.png";
+import Image from 'next/image';
+import React from 'react';
+import htmlLogo from '../public/assets/skills/html.png';
+import cssLogo from '../public/assets/skills/css.png';
+import jsLogo from '../public/assets/skills/javascript.png';
+import reactLogo from '../public/assets/skills/react.png';
+import nextLogo from '../public/assets/skills/nextjs.png';
+import cSharpLogo from '../public/assets/skills/csharp.png';
+import mongodbLogo from '../public/assets/skills/mongo.png';
+import firebaseLogo from '../public/assets/skills/firebase.png';
+import angularLogo from '../public/assets/skills/angular.png';
+import netcorelogo from '../public/assets/skills/netcore.png';
+import efcorelogo from '../public/assets/skills/efcore.png';
+import sqllogo from '../public/assets/skills/sql.png';
+import gitlogo from '../public/assets/skills/git.png';
 
 const Skills = () => {
   return (
@@ -71,16 +76,6 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src={nodejsLogo} alt="" width="64px" height="64px" />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>NodeJS</h3>
-              </div>
-            </div>
-          </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
                 <Image src={mongodbLogo} alt="" width="64px" height="64px" />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -95,6 +90,66 @@ const Skills = () => {
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Firebase</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image src={angularLogo} alt="" width="64px" height="64px" />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Angular</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image src={cSharpLogo} alt="" width="64px" height="64px" />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>C#</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image src={netcorelogo} alt="" width="64px" height="64px" />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>.Net 6</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image src={efcorelogo} alt="" width="64px" height="64px" />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>EF Core</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image src={sqllogo} alt="" width="104px" height="64px" />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>SQL</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image src={gitlogo} alt="" width="104px" height="64px" />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Git</h3>
               </div>
             </div>
           </div>
